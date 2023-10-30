@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <h1 class ='text'>Crud Application Task</h1>
+  <div class="container">
+    <div class="row">
+    <div class="col-md-5">
+     <form id="stdForm"class='stdForm'>
+      <div class="form-group">
+        <label for="fname">Fname</label>
+        <input type="text" class="form-control font-weight-bold" id="fname">
+      </div>
+     
+      <div class="form-group">
+        <label for="lname">Lname</label>
+        <input type="text" class="form-control font-weight-bold" id="lname">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control font-weight-bold" id="email">
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact</label>
+        <input type="text" class="form-control font-weight-bold" id="contact">
+      </div>
+         <div class="text-right mt-4">
+          <button class="btn btn-primary font-weight-bold" id="submitid" type = 'submit'>Add Student
+
+          </button>
+          <button class="btn btn-danger font-weight-bold d-none" id="updateid" type = 'button'>Update
+
+          </button>
+         </div>
+     </form> 
+    </div>
+    <div class="col-md-7">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sr No</th>
+              <th>Fname</th>
+              <th>Lname</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Edit</th> 
+              <th>Delete</th>
+            </tr>
+          </thead>
+
+          <tbody id="stdContainer">
+         
+          </tbody>
+    
+        </table>
+    
+      </div>
+    </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+  <script src="assets/js/app.js">
+
+ </script>
+
+</body>
+</html>
